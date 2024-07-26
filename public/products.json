@@ -1,0 +1,153 @@
+[
+  {
+    "name": "HUMISTAR WG",
+    "price": 50,
+    "image": "https://i.ibb.co/86NwSN8/Assests-6.jpg",
+    "stock": 150,
+    "out_of_stock": false,
+    "product_description": " Makes plant uptake of all the nutrients available in the soil.",
+    "category": "Fertilizer",
+    "subcategory": "hotDeals",
+    "savePrice": 10
+  },
+  {
+    "name": "Bumper Trico-Compost",
+    "price": 60,
+    "image": "https://i.ibb.co/R2dFrwb/Assests-2.jpg",
+    "stock": 150,
+    "out_of_stock": false,
+    "product_description": " Bumper Tricho-Compost helps to rapidly fertilize infertile soil by increasing the number of Trichoderma and other beneficial microorganisms living in the soil.",
+    "category": "Fertilizer"
+  },
+  {
+    "name": "Bypro",
+    "price": 100,
+    "image": "https://i.ibb.co/7jTdVdQ/01.jpg",
+    "stock": 150,
+    "out_of_stock": false,
+    "product_description": " Bypro, our leading innovative brand, is rich in bypass protein and improves the yield of high milk-producing animals.",
+    "category": "Cattle",
+    "subcategory": "hotDeals",
+    "savePrice": 10
+  },
+  {
+    "name": "Meat More",
+    "price": 150,
+    "image": "https://i.ibb.co/sPRb1Rx/02.jpg",
+    "stock": 150,
+    "out_of_stock": false,
+    "product_description": " Our brand, Meat More, is popular in the cattle fattening market of rural Bangladesh.",
+    "category": "Cattle"
+  },
+  {
+    "name": "Mahisa",
+    "price": 100,
+    "image": "https://i.ibb.co/N1cJnkd/01.jpg",
+    "stock": 150,
+    "out_of_stock": false,
+    "product_description": "Our brand, Mahisa, makes us the market leader (among commercial fish farmers) in the floating fish feed market.",
+    "category": "Fish",
+    "subcategory": "hotDeals",
+    "savePrice": 10
+  },
+  {
+    "name": "Mahisa Premium",
+    "price": 150,
+    "image": "https://i.ibb.co/DtgSRhW/04.jpg",
+    "stock": 150,
+    "out_of_stock": false,
+    "product_description": "Our nutritionally balanced and scientifically formulated products help in weight gain and uniformity, increase survival rates and improve the feed conversion ratio.",
+    "category": "Fish"
+  },
+  {
+    "name": "Crumbro",
+    "price": 100,
+    "image": "https://i.ibb.co/xqdzN2L/01.jpg",
+    "stock": 150,
+    "out_of_stock": false,
+    "product_description": "our premium quality Poultry Feed, is formulated to address the nutritional demand of fast growing broilers.",
+    "category": "Poultry",
+    "subcategory": "hotDeals",
+    "savePrice": 10
+  },
+  {
+    "name": "Crumbro Layer ",
+    "price": 150,
+    "image": "https://i.ibb.co/LnL9DW9/03.jpg",
+    "stock": 150,
+    "out_of_stock": false,
+    "product_description": "Our Layer Feed helps meet the nutritional needs of birds at each life-stage and also, optimises the egg production of the flock.",
+    "category": "Poultry"
+  },
+  {
+    "name": "PA Gut (75gm)",
+    "price": 100,
+    "image": "https://i.ibb.co/c37btF1/db4e4c4f1e1abcd9c1a57b1d57830af0.jpg",
+    "stock": 150,
+    "out_of_stock": false,
+    "product_description": "our premium quality Poultry Feed, is formulated to address the nutritional demand of fast growing broilers.",
+    "category": "petAndBirds",
+    "subcategory": "hotDeals",
+    "savePrice": 10
+  },
+  {
+    "name": "PA Horlis ",
+    "price": 150,
+    "image": "https://i.ibb.co/KmpJkZv/images-q-tbn-ANd9-Gc-TAGp-Ognxx-KEz-DVu-P0-SPW8xu1eajtpc-Z-lx3io6-EOI7-If5l8e-Cfeldftszgrf-ZMk-fqz-H.jpg",
+    "stock": 150,
+    "out_of_stock": false,
+    "product_description": "Our Layer Feed helps meet the nutritional needs of birds at each life-stage and also, optimises the egg production of the flock.",
+    "category": "petAndBirds"
+  },
+  {
+    "name": "BOVIVAX LSD-N",
+    "price": 100,
+    "image": "https://i.ibb.co/rtzkBQz/BOVIVAX-LSD-N-1.jpg",
+    "stock": 150,
+    "out_of_stock": false,
+    "product_description": "our premium quality Poultry Feed, is formulated to address the nutritional demand of fast growing broilers.",
+    "category": "Vaccine",
+    "subcategory": "hotDeals",
+    "savePrice": 10
+  },
+  {
+    "name": "Canine DHPPL Vaccine ",
+    "price": 150,
+    "image": "https://i.ibb.co/VTLhnLt/GCVP-Canine-DHPPL-Vaccine-2.jpg",
+    "stock": 150,
+    "out_of_stock": false,
+    "product_description": "Our Layer Feed helps meet the nutritional needs of birds at each life-stage and also, optimises the egg production of the flock.",
+    "category": "Vaccine"
+  },
+  {
+    "name": "Chilli Seeds",
+    "price": 100,
+    "image": "https://i.ibb.co/6X9V5Nr/17-af702269-796d-4229-9cfc-be894f608181-300x.png",
+    "stock": 150,
+    "out_of_stock": false,
+    "product_description": "our premium quality Poultry Feed, is formulated to address the nutritional demand of fast growing broilers.",
+    "category": "Vegetable",
+    "subcategory": "hotDeals",
+    "savePrice": 10
+  },
+  {
+    "name": "Dhundol Seeds ",
+    "price": 150,
+    "image": "https://i.ibb.co/NyfkH2L/1-740287e6-a331-4d03-9645-34dc13bfb473-1024x1024.png",
+    "stock": 150,
+    "out_of_stock": false,
+    "product_description": "Our Layer Feed helps meet the nutritional needs of birds at each life-stage and also, optimises the egg production of the flock.",
+    "category": "Vegetable"
+  },
+  {
+    "name": "Animal Genetic ",
+    "price": 150,
+    "image": "https://i.ibb.co/tH0bb9S/brown-Guernsey-cow.jpg",
+    "stock": 150,
+    "out_of_stock": false,
+    "product_description": "Our Layer Feed helps meet the nutritional needs of birds at each life-stage and also, optimises the egg production of the flock.",
+    "category": "animalGenetic",
+    "subcategory": "hotDeals",
+    "savePrice": 10
+  }
+]
