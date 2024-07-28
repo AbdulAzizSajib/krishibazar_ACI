@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Countdown from "react-countdown";
 import { Link } from "react-router-dom";
-import { TbCurrencyTaka } from "react-icons/tb";
+
+import ProductsCard from "../Shared/ProductsCard";
 
 const HotDeals = () => {
   //fetch products from json
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("products.json")
+    fetch("http://localhost:5000/products")
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);
@@ -87,47 +88,49 @@ const HotDeals = () => {
         {/* //products */}
         <div class="grid grid-cols-1 gap-3 mt-4 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 place-items-center">
           {products.map((product, index) => (
-            <div
-              key={index}
-              class="h-[429px] w-[307px] rounded-2xl bg-[#e3fff3]"
-            >
-              <div class="w-[307px] h-[218px] flex justify-center rounded-t-2xl border bg-white items-center relative">
-                <img class="w-[175px]" src={product.image} alt="" />
-                <div class="absolute flex justify-between w-full px-4 top-6">
-                  <div class="flex items-center justify-center">
-                    <p class="border bg-[#a5ffd9] text-center px-2">In Stock</p>
-                  </div>
+            <ProductsCard key={index} items={product}  />
+            // <div
+            //   key={index}
+            //   class="h-[429px] w-[307px] rounded-2xl bg-[#e3fff3]"
+            // >
+            //   <div class="w-[307px] h-[218px] flex justify-center rounded-t-2xl border bg-white items-center relative">
+            //     <img class="w-[175px]" src={product.image} alt="" />
+            //     <div class="absolute flex justify-between w-full px-4 top-6">
+            //       <div class="flex items-center justify-center">
+            //         <p class="border bg-[#a5ffd9] text-center px-2">In Stock</p>
+            //       </div>
 
-                  <div class="border-2 bg-[#a5ffd9] border-[#34d08d] flex items-center justify-center rounded-full w-14 h-14">
-                    <p class="text-center">10 % Save</p>
-                  </div>
-                </div>
-              </div>
-              <div class="px-3 mt-3 space-y-2">
-                <h2 class="text-2xl font-semibold">
-                  {product.name}
-                  <span className="text-lg font-light ml-2 text-gray-400 ">
-                    ({product.category})
-                  </span>
-                </h2>
+            //       <div class="border-2 bg-[#a5ffd9] border-[#34d08d] flex items-center justify-center rounded-full w-14 h-14">
+            //         <p class="text-center">10 % Save</p>
+            //       </div>
+            //     </div>
+            //   </div>
+            //   <div class="px-3 mt-3 space-y-2">
+            //     <h2 class="text-2xl font-semibold">
+            //       {product.name}
+            //       <span className="text-lg font-light ml-2 text-gray-400 ">
+            //         ({product.category})
+            //       </span>
+            //     </h2>
 
-                <h2 class="text-xl">
-                  <i class="text-yellow-400 fa-solid fa-star"></i> 5.0
-                  <span class="text-gray-400">(135 Reviews)</span>
-                </h2>
-                <h2 class="text-3xl flex items-center font-bold">
-                  {product.price} <TbCurrencyTaka />
-                </h2>
+            //     <h2 class="text-xl">
+            //       <i class="text-yellow-400 fa-solid fa-star"></i> 5.0
+            //       <span class="text-gray-400">(135 Reviews)</span>
+            //     </h2>
+            //     <h2 class="text-3xl flex items-center font-bold">
+            //       {product.price} <TbCurrencyTaka />
+            //     </h2>
 
-                <div class="flex justify-center mx-4">
-                  <button class="w-full btn bg-slate-50 hover:bg-primary hover:text-white">
-                    Add to Cart
-                  </button>
-                </div>
-              </div>
-            </div>
+            //     <div class="flex justify-center mx-4">
+            //       <button class="w-full btn bg-slate-50 hover:bg-primary hover:text-white">
+            //         Add to Cart
+            //       </button>
+            //     </div>
+            //   </div>
+            // </div>
           ))}
         </div>
+        
       </section>
     </div>
   );

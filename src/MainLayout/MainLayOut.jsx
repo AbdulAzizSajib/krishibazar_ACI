@@ -1,16 +1,18 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
+import Footer from "../Components/Footer/Footer";
 
 const MainLayOut = () => {
+  const location = useLocation();
+  const isNavbarFooter = location.pathname === "/login";
   return (
     <div>
-      <header>
-        <Navbar />
-      </header>
-      <div className="min-h-screen container mx-auto border-2">
+      {isNavbarFooter || <Navbar />}
+
+      <div className="min-h-screen container mx-auto">
         <Outlet></Outlet>
       </div>
-      <footer>Footer</footer>
+      {isNavbarFooter || <Footer />}
     </div>
   );
 };
