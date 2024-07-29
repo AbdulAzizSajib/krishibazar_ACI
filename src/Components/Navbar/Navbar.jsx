@@ -4,8 +4,10 @@ import { IoCartOutline } from "react-icons/io5";
 import { FiUser } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { RiMenu2Line } from "react-icons/ri";
+import useAuth from "../Hooks/useAuth";
 
 const Navbar = () => {
+  const { user, logout } = useAuth();
   const navLinks = (
     <>
       <li>
@@ -46,15 +48,7 @@ const Navbar = () => {
             />
           </div>
         </div>
-        {/* <div className=" hidden lg:flex border w-full border-green-600">
-          <div className="form-control w-full">
-            <input
-              type="text"
-              placeholder="Search"
-              className="input input-bordered "
-            />
-          </div>
-        </div> */}
+
         <div className=" flex flex-1 justify-end w-full  space-x-1">
           <button className="btn hover:bg-green-600 hidden sm:flex btn-circle btn-sm bg-green-600 text-white">
             <div className="indicator">
@@ -68,9 +62,7 @@ const Navbar = () => {
           <button className="btn hover:bg-green-600  btn-circle btn-sm bg-green-600 text-white">
             <IoCartOutline className="text-xl"></IoCartOutline>
           </button>
-          {/* <button className="btn hover:bg-green-600  btn-circle btn-sm bg-green-600 text-white">
-            <FiUser className="text-xl"></FiUser>
-          </button> */}
+
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
@@ -97,9 +89,15 @@ const Navbar = () => {
               <li>
                 <a>Settings</a>
               </li>
-              <li>
-                <a>Logout</a>
-              </li>
+              {user?.email ? (
+                <li>
+                  <a onClick={logout}>Logout</a>
+                </li>
+              ) : (
+                <li>
+                  <a href="/login">Login</a>
+                </li>
+              )}
             </ul>
           </div>
         </div>
