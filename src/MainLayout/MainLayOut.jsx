@@ -1,6 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer";
+// import Footer from "../Components/Footer/Footer";
+import { Toaster } from "react-hot-toast";
 
 const MainLayOut = () => {
   const location = useLocation();
@@ -12,7 +13,8 @@ const MainLayOut = () => {
       <div className="min-h-screen container mx-auto">
         <Outlet></Outlet>
       </div>
-      {isNavbarFooter || <Footer />}
+      {/* {isNavbarFooter || <Footer />} */}
+      <Toaster />
     </div>
   );
 };

@@ -5,8 +5,10 @@ import { FiUser } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { RiMenu2Line } from "react-icons/ri";
 import useAuth from "../Hooks/useAuth";
+import useCart from "../Hooks/useCart";
 
 const Navbar = () => {
+  const [cart] = useCart();
   const { user, logout } = useAuth();
   const navLinks = (
     <>
@@ -59,9 +61,14 @@ const Navbar = () => {
           <button className="btn hover:bg-green-600 hidden md:flex  btn-circle btn-sm bg-green-600 text-white">
             <IoHeartOutline className="text-xl"></IoHeartOutline>
           </button>
-          <button className="btn hover:bg-green-600  btn-circle btn-sm bg-green-600 text-white">
-            <IoCartOutline className="text-xl"></IoCartOutline>
-          </button>
+          <div className="indicator">
+            <span className="indicator-item badge badge-secondary">
+              {cart.length}
+            </span>
+            <button className="btn hover:bg-green-600  btn-circle btn-sm bg-green-600 text-white">
+              <IoCartOutline className="text-xl"></IoCartOutline>
+            </button>
+          </div>
 
           <div className="dropdown dropdown-end">
             <div
